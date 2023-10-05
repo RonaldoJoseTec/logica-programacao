@@ -1,0 +1,27 @@
+body {
+    padding: 10px 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    color:brown;
+    padding: 10px;
+}
+
+input {
+
+}
+
+.controle-form {
+    padding-bottom: 3px;
+}

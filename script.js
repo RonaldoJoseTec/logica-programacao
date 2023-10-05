@@ -1,3 +1,5 @@
+function mediaAluno() {
+
 //aula1
 //document.write("Olá, mundo");
 //console.log("Imprimindo no console!");
@@ -12,21 +14,35 @@
 
 console.log("Início do programa",'\n','\n')
 
-let nota1 = 7;
-let nota2 = 8;
-let nota3 = 9;
-
-nota1 = parseInt(prompt("Insira a nota 1"));
-nota2 = parseInt(prompt("Insira a nota 2"));
-nota3 = parseInt(prompt("Insira a nota 3"));
-
-console.log("A nota 1 é:", nota1);
-console.log("A nota 2 é:", nota2);
-console.log("A nota 3 é:", nota3, '\n','\n');
+//declaração das "variáveis"
+const nota1 = parseInt(document.getElementById("nota1").value);
+const nota2 = parseInt(document.getElementById("nota2").value);
+const nota3 = parseInt(document.getElementById("nota3").value);
 
 //cálculo da média
 media = (nota1 + nota2 + nota3) /3;
 
+//console.log("A nota 1 é:", nota1);
+//console.log("A nota 2 é:", nota2);
+//console.log("A nota 3 é:", nota3, '\n','\n');
+
+document.getElementById("resultado").innerHTML = "A média do aluno é:" + media + "<br>";
+
 console.log("A média do aluno é:", media,'\n','\n');
 
-console.log("Fim do programa")
+if (media >= 7) {
+    document.getElementById("resultado").innerHTML += "Aprovado";
+} else if (media >= 5) {
+    document.getElementById("resultado").innerHTML += "Exame";
+} else {
+    document.getElementById("resultado").innerHTML += "Reprovado";
+}
+
+// if (media < 5 ) {
+//    console.log("Reprovado");
+// }
+
+console.log("Fim do programa");
+
+}
+
