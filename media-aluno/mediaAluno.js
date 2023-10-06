@@ -26,7 +26,7 @@ media = (nota1 + nota2 + nota3) /3;
 //console.log("A nota 2 é:", nota2);
 //console.log("A nota 3 é:", nota3, '\n','\n');
 
-document.getElementById("resultado").innerHTML = "A média do aluno é:" + media + "<br>";
+document.getElementById("resultado").innerHTML = "A média do aluno é: " + media + "<br>";
 
 console.log("A média do aluno é:", media,'\n','\n');
 
